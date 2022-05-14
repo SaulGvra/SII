@@ -13,5 +13,6 @@
 </div>
 
 <!-- El code de abajo es para el index -->
+<!-- El code de abajo es para el index -->
 </div>
 </main>
