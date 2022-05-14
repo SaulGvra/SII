@@ -1,0 +1,114 @@
+
+/*Animación al pasar el cursor sobre el side*/
+a,
+a:hover,
+a:focus{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+/*Quitar el estilo dde las listas (listado)*/
+.lisst-unstyled{
+    list-style: none;
+}
+
+/*----------------------------------------------Side Bar-----------------------*/
+
+/*Contenedor principal del side y el body*/
+.wrapper{
+    text-decoration: wavy;
+}
+/*Estilo del boton*/
+.estBtn{
+    background: rgba(38, 54, 145,0);
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+/*Diseño del sidebar*/
+.sb
+{
+    min-width: 260px;
+    max-width: 260px;
+    background: #212529;
+    color: rgb(206, 205, 205);
+    transition: all 0.3s;  
+}
+
+/*Diseño del header del sidebar*/
+.sb .sidebar-header
+{
+    padding: 25px;
+    background: #212529;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+/*Diseño de hr*/
+.sb ul.components{
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+/*Diseño del texto al pasar el cursor*/
+.sb ul p{
+    
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+/*Tamaño de los contenedores de selección*/
+.sb ul li a{
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    list-style: none;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+/*Color de letra seleccionada*/
+.sb ul li a:hover{
+    color: #000000;
+    background: #0088ff;
+}
+/*Mostrar datos del drop*/
+a[data-toggle="collapse"]
+{
+    position: relative;
+}
+/*Efecto del drop*/
+.dropdown-toggle::after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    
+}
+/*Color de fondo en el dropdown*/
+ul ul a{
+    font-size: 0.9em;
+    padding-left: 30px;
+    background: rgb(4, 83, 152);
+}
+/*Pantalla pequeña y mediana*/
+@media (max-width: 767px){
+    .sb{
+        margin-left: -260px;
+        position: absolute;
+    }
+}
+/*Pantalla de escritorio*/
+@media(min-width: 767px){
+    .sb{
+        position: relative;
+        margin-left: 0px;
+    }
+    .wrapper{
+        display: flex;
+    }
+}
+.offcanvas {
+    width : 261px !important;
+    background-color: rgb(255, 255, 255)
+  }
+.offcanvas-body {
+    padding: 0px !important;
+}

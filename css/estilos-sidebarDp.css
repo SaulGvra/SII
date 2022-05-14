@@ -1,0 +1,93 @@
+
+/*Animación al pasar el cursor sobre el side*/
+a,
+a:hover,
+a:focus{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+/*Quitar el estilo dde las listas (listado)*/
+.lisst-unstyled{
+    list-style: none;
+}
+
+/*----------------------------------------------Side Bar-----------------------*/
+
+/*Diseño del sidebar*/
+.sbDp
+{
+    min-width: 260px;
+    max-width: 260px;
+    background: #212529;
+    color: rgb(206, 205, 205);
+    transition: all 0.3s; 
+    
+}
+
+
+/*Diseño del header del sidebar*/
+.sbDp .sidebar-header
+{
+    padding: 25px;
+    background: #212529;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+/*Diseño de hr*/
+.sbDp ul.components{
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+/*Diseño del texto al pasar el cursor*/
+.sbDp ul p{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+/*Tamaño de los contenedores de selección*/
+.sbDp ul li a{
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    list-style: none;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+/*Color de letra seleccionada*/
+.sbDp ul li a:hover{
+    color: #000000;
+    background: #0088ff;
+}
+/*Mostrar datos del drop*/
+a [data-toggle="collapse"]
+{
+    position: relative;
+}
+
+/*Efecto del drop*/
+.dropdown-toggle::after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+/*Color de fondo en el dropdown*/
+ul ul a{
+    font-size: 0.9em;
+    padding-left: 30px;
+    background: rgb(4, 83, 152);
+}
+
+.offcanvas {
+    width : 261px !important;
+    background-color: #212529;
+}
+/*Pantalla pequeña y mediana*/
+@media (max-width: 767px){
+    .sbDp{
+        position: absolute !important;
+    }
+}
+

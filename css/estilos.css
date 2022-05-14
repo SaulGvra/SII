@@ -1,0 +1,76 @@
+
+/*-----------------------Header--------------------------*/
+.t1, .imgHeader
+{
+    text-align: center;
+     
+    /*font-size: 70%;*/
+}
+.tituloSii{
+    font-family: 'Akshar', sans-serif;
+    line-height: 2vw;
+    font-size: 2vw;
+    color: yellow;
+    text-align: center;
+}
+.tituloTex {
+    font-family: 'Akshar', sans-serif;
+    line-height: 2vw;
+    font-size: 1.6vw;
+    
+    color: rgb(255, 255, 255);
+    text-align: center; 
+}
+/*----------------------Body y footer--------------------*/
+
+body{
+    background-color: white;
+  
+}
+footer{
+    padding: 1%;  
+    background-color: rgba(175, 175, 175,0.5);
+}
+/*-------------------Clase principal---------------------*/
+
+.filas {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.paddTop5 {
+    padding-top: 5%;
+}
+.centrarTexto {
+    text-align: center;
+}
+.principal {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+/*----------------------Media----------------------*/
+
+@media screen and (max-width: 575px){
+    .header {
+        background-color: rgb(0, 136, 255);
+        padding: 4%;
+    }
+}
+@media(min-width: 575px) and (max-width: 767px){
+    .header {
+        background-color: rgb(0, 136, 255);
+        padding: 2%;
+    }
+}
+@media(min-width: 767px) and (max-width: 991px){
+    .header {
+        background-color: rgb(0, 136, 255);
+        padding: 2%;
+    }
+}
+@media(min-width: 991px) {
+    .header {
+        background-color: rgb(0, 136, 255);
+        padding: 2%;
+    }
+}
