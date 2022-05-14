@@ -1,6 +1,9 @@
 <div class="principal container-fluid">
 
 <!-- Aquí su código -->
+<!-- Aquí su código -->
+<!-- Aquí su código -->
+<!-- Aquí su código -->
 
 </div>
 
