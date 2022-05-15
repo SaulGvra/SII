@@ -29,11 +29,11 @@
 
                 <div class="imgHeader col">
                         <div class="">
-                                <button type="image" class="btn  changer estBtn d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><img src = "/imagenes/lista.png" width="60vw"></button>
+                                <button type="image" class="btn  changer estBtn d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><img src = "../imagenes/lista.png" width="60vw"></button>
                         </div>
 
                     <div>
-                        <a class="img d-none d-md-block" href="#" ><img src = "/imagenes/sep.png"  width= 50% ></a>
+                        <a class="img d-none d-md-block" href="#" ><img src = "../imagenes/sep.png"  width= 50% ></a>
                     </div>
                 </div>
 
@@ -52,11 +52,11 @@
                 </div>
                 <div class="imgHeader col">
                     <div>
-                        <a class="img d-block d-md-none" href="#" ><img src = "/imagenes/itp.png"  width= 30% ></a>
+                        <a class="img d-block d-md-none" href="#" ><img src = "../imagenes/itp.png"  width= 30% ></a>
                         
                     </div>
                     <div>
-                        <a class="img d-none d-md-block" href="#" ><img src = "/imagenes/tecnm.png"  width= 50% ></a>
+                        <a class="img d-none d-md-block" href="#" ><img src = "../imagenes/tecnm.png"  width= 50% ></a>
                     </div>
                 </div>
             </div>
