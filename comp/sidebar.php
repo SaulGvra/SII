@@ -71,7 +71,7 @@
                                         <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                                         <ul class="collapse lisst-unstyled" id="pageSubmenuDP">
                                             <li>
-                                                <a href="#">Datos personales</a>
+                                                <a href="../modulos/datos_personales.php">Datos personales</a>
                                             </li>
                                         </ul>
                                     </li>
