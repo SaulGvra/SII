@@ -38,7 +38,7 @@
               <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/datos_personales.php')
+          include('modulos/registro_aspirante.php')
           ?>                    
                 
               
