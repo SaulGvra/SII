@@ -1,48 +1,78 @@
 <div class="principal container-fluid">
 
-<table width="50%" border ="0">
-        <tr>
-            <td width="20%">
-                <asp:Label ID="Label2" runat="server" Text="Dato 1"></asp:Label>
-            </td>
+<div class="paddingt row ">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Datos del alumno</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre (s)</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+              Introduce tu nombre.
+              </div>
+            </div>
 
-            <td width 50%>
-                
-                <asp:TextBox ID="TextBox1" runat="server" Width="489px"></asp:TextBox>
-                
-            </td>
-            
-        </tr>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido Paterno</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+              Introduce tu apellido paterno.
+              </div>
+            </div>
 
-        <tr>
-            <td>
-                <asp:Label ID="Label3" runat="server" Text="Dato 2"></asp:Label>
-            </td>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido Materno</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+              Introduce tu apellido materno.
+              </div>
+            </div>
 
-            <td>
-                <asp:TextBox ID="TextBox2" runat="server" Width="492px"></asp:TextBox>
-            </td>
-        </tr>
+            <div class="col-12">
+              <label for="address" class="form-label">Teléfono</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Introduce un número telefónico
+              </div>
+            </div>
 
-        <tr>
-            <td colspan ="2">
-                <br>
-                <asp:Button ID="Button1" runat="server" Text="Hipotenusa" OnClick="Button1_Click" />
-                &nbsp;&nbsp;&nbsp
-                <asp:Button ID="Button2" runat="server" Text="Vol_Esfera" OnClick="Button2_Click" />
-                &nbsp;&nbsp;&nbsp
-                <asp:Button ID="Button3" runat="server" Text="Vol_Icosaedro" OnClick="Button3_Click" />
-                &nbsp;&nbsp;&nbsp
-                <asp:Button ID="Button4" runat="server" Text="Energía (gr)" OnClick="Button4_Click" />
-                &nbsp;&nbsp;&nbsp
-                <asp:Button ID="Button5" runat="server" Text="Energía (kg)" OnClick="Button5_Click" />
-                </br>
-            </td>
-        </tr>
-        
-    
-    <br/>
-        </table>
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+
 
 </div>
 
