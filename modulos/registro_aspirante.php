@@ -2,7 +2,7 @@
 
 <div class="paddingt row ">
       <div class="col-md-7 col-lg-8">
-        <h3 class="mb-3">Datos del alumno</h3>
+        <h3 class="mb-3">Registro del alumno</h3>
         <h6 class="mb-3" id="titulos" >Información del alumno</h6>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
@@ -34,9 +34,8 @@
 
             <div class="col-sm-4">
               <label for="firstName" class="form-label">Año</label>
-              <input type="text" class="form-control" id="firstName" placeholder="XXXX" value="" required>
               <select class="form-select" id="state" required>
-                <option value="">Elegir...</option>
+                <option value="">Seleccionar...</option>
                 <option>2022</option>
                 <option>2021</option>
                 <option>2020</option>
@@ -74,9 +73,8 @@
 
             <div class="col-sm-4">
               <label for="lastName" class="form-label">Mes</label>
-              <input type="text" class="form-control" id="lastName" placeholder="XX" value="" required>
               <select class="form-select" id="state" required>
-                <option value="">Elegir...</option>
+                <option value="">Seleccionar...</option>
                 <option>Enero</option>
                 <option>Febrero</option>
                 <option>Marzo</option>
@@ -97,9 +95,8 @@
 
             <div class="col-sm-4">
               <label for="lastName" class="form-label">Día</label>
-              <input type="text" class="form-control" id="lastName" placeholder="XX" value="" required>
               <select class="form-select" id="state" required>
-                <option value="">Elegir...</option>
+                <option value="">Seleccionar...</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -142,7 +139,7 @@
 
             <div class="col-3">
               <label for="address" class="form-label">Teléfono</label>
-              <input type="text" class="form-control" id="address" placeholder="7721381457" required>
+              <input type="text" class="form-control" id="address" placeholder="xxx-xxx-xxxx" required>
               <div class="invalid-feedback">
                 Introduce un número telefónico
               </div>
