@@ -19,12 +19,12 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
             
-            
 
             <title>SII</title>
           </head>
     <body>
           <!-- ------------------------ Header ----------------------- -->
+
           <?php
           include('comp/header.php')
           ?>
@@ -38,7 +38,7 @@
               <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/principal.php')
+          include('modulos/datos_personales.php')
           ?>                    
                 
               
