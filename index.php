@@ -13,7 +13,7 @@
             <link href="css/estilos.css" rel="stylesheet">
             <link href="css/estilos-sidebar.css" rel="stylesheet">
             <link href="css/estilos-sidebarDp.css" rel="stylesheet">
-            <link href="css/modulos.css" rel="stylesheet">
+
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css">
@@ -38,7 +38,7 @@
               <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/registro_aspirante.php')
+          include('modulos/boleta.php')
           ?>                    
                 
               
@@ -58,6 +58,7 @@
                   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                   <script src="js/bootstrap.min.js"></script> 
+                  <link href="css/modulos.css" rel="stylesheet">
 
       </body>
 
