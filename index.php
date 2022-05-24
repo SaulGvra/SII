@@ -38,7 +38,7 @@
               <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/boleta.php')
+          include('modulos/kardex.php')
           ?>                    
                 
               
