@@ -4,11 +4,7 @@
     <div class="container">
                                     <br><br><br>
                                         <div class="row">
-                                            <h5>ALUMNO:  XXXXX      NO CONTROL: 18200747</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row">
-                                            <h5>SEMESTRE: 8     CARRERA:ING EN SIS. COMP.</h5>
+                                            <?php include('conexionKardex.php')?>
                                         </div>
                                     <br>
                                         <div class="container">
@@ -110,3 +106,4 @@
 </div>
 
 </main>
+
