@@ -1,5 +1,6 @@
 <div class="principal container-fluid">
 
+<form action="modulos/insertar.php" method="post">
 <div class="paddingt row ">
       <div class="col-md-7 col-lg-8">
         <h3 class="mb-3">Registro del alumno</h3>
@@ -8,7 +9,7 @@
           <div class="row g-3">
             <div class="col-sm-4">
               <label for="firstName" class="form-label">Nombre (s)</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
               <div class="invalid-feedback">
               Introduce tu nombre.
               </div>
@@ -16,7 +17,7 @@
 
             <div class="col-sm-4">
               <label for="lastName" class="form-label">Apellido Paterno</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="paterno" placeholder="" value="" required>
               <div class="invalid-feedback">
               Introduce tu apellido paterno.
               </div>
@@ -24,7 +25,7 @@
 
             <div class="col-sm-4">
               <label for="lastName" class="form-label">Apellido Materno</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="materno" placeholder="" value="" required>
               <div class="invalid-feedback">
               Introduce tu apellido materno.
               </div>
@@ -34,7 +35,7 @@
 
             <div class="col-sm-4">
               <label for="firstName" class="form-label">Año</label>
-              <select class="form-select" id="state" required>
+              <select class="form-select" id="año" required>
                 <option value="">Seleccionar...</option>
                 <option>2022</option>
                 <option>2021</option>
@@ -73,20 +74,20 @@
 
             <div class="col-sm-4">
               <label for="lastName" class="form-label">Mes</label>
-              <select class="form-select" id="state" required>
+              <select class="form-select" id="mes" required>
                 <option value="">Seleccionar...</option>
-                <option>Enero</option>
-                <option>Febrero</option>
-                <option>Marzo</option>
-                <option>Abril</option>
-                <option>Mayo</option>
-                <option>Junio</option>
-                <option>Julio</option>
-                <option>Agosto</option>
-                <option>Septiembre</option>
-                <option>Octubre</option>
-                <option>Noviembre</option>
-                <option>Diciembre</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
               </select>
               <div class="invalid-feedback">
               Introduce mes de nacimiento.
@@ -95,7 +96,7 @@
 
             <div class="col-sm-4">
               <label for="lastName" class="form-label">Día</label>
-              <select class="form-select" id="state" required>
+              <select class="form-select" id="dia" required>
                 <option value="">Seleccionar...</option>
                 <option>01</option>
                 <option>02</option>
@@ -159,11 +160,12 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Registrar</button>
+          <button class="w-100 btn btn-primary btn-lg" id="registrar" type="submit">Registrar</button>
         </form>
       </div>
     </div>
 
+</form>
 
 </div>
 
