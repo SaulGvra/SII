@@ -26,7 +26,7 @@
     } 
 ?>
 
-<!--Se cierra el Row de kardex.php-->
+<!-- Se cierra el Row de kardex.php-->
 </div>
                                     <!--CONTINUACION DEL HTML-->
                                     <br>
