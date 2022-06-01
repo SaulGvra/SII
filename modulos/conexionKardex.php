@@ -8,7 +8,9 @@
     // consulta datos del alumno
     $query = "SELECT alumno.alu_cve_nocontrol, alumno.alu_nombre,alumno.alu_paterno,alumno.alu_materno ,alumno.alu_semestre, alumno.alu_especialidad FROM alumno where alumno.alu_cve_nocontrol='18200759';";
     // Guardar datos del registro en variables
+    // EL if es para ver que el query te devolvió registros
     if ($result = $mysqli->query($query)) {
+        //Da vuelta por cada fila encontrada
         while ($row = $result->fetch_assoc()) 
         {
             $field1name = $row["alu_nombre"];
@@ -24,6 +26,7 @@
             <h5 id="mayus">SEMESTRE ACTUAL: '.$field3name.'- -ESPECIALIDAD:'.$field4name.'-</h5>
             ';
         }
+        //Se vacía la variable result
         $result->free();
     } 
 ?>
@@ -41,6 +44,8 @@ function semes ($semes,$control,$mysqli)
     $prom=0;
     $cred=0;
     $tcred=0; $aux=0; $ban=true;
+
+    // EL if es para ver que el query te devolvió registros
     if ($result = $mysqli->query($query)) 
     {
         while ($row = $result->fetch_assoc()) 
@@ -69,6 +74,7 @@ function semes ($semes,$control,$mysqli)
             $field1name = $row["mat_cve_materia"];
             $field2name = $row["mat_nombre"];
             $field3name = $row["mat_creditos"];
+            //Campo calculado
             $field4name = ($row["cal_unidad1"]+$row["cal_unidad2"]+$row["cal_unidad3"]+$row["cal_unidad4"]+$row["cal_unidad5"]+$row["cal_unidad6"])/6;
             // Agregar variables al html
             echo '
@@ -109,7 +115,7 @@ function semes ($semes,$control,$mysqli)
     }
 }
 $sem=1;
-while ($sem<=9)
+while ($sem<=13)
 {
     semes ($sem,$field2name,$mysqli);
     $sem=$sem+1;
