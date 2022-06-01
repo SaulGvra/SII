@@ -1,9 +1,5 @@
 <?php
-    // conexión a la base de datos
-    $username = "root";
-    $password = "7202"; // usar contraseña de bases de datos local
-    $database = "sii"; 
-    $mysqli = new mysqli("localhost", $username, $password, $database);
+    include('conexion.php');
     // consulta datos del alumno
     $query = "SELECT alumno.alu_cve_nocontrol, alumno.alu_nombre,alumno.alu_paterno,alumno.alu_materno ,alumno.alu_semestre, alumno.alu_especialidad FROM alumno where alumno.alu_cve_nocontrol='18200759';";
     // Guardar datos del registro en variables

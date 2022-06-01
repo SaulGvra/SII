@@ -44,7 +44,7 @@ $aspirante = "SELECT * FROM aspirante";
               <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/registro_aspirante.php')
+          include('modulos/kardex.php')
           ?>                    
                 
               
