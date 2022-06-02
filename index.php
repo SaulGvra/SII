@@ -37,7 +37,7 @@ $aspirante = "SELECT * FROM aspirante";
         <!-- ---------------------Sidebar----------------------- -->
 
         <?php
-        include('comp/sidebar.php')
+        include('comp/sidebar_per.php')
         ?>
 
         <!-- ---------------------Modulo----------------------- -->

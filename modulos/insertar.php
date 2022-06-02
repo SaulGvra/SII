@@ -12,7 +12,7 @@ class GETTING
 
 	public function __construct()
 	{
-		$this->aspirante = $_POST['ASP-1'];
+		$this->aspirante = $_POST['aspirante'];
 		$this->nombre = $_POST['nombre'];
 		$this->paterno = $_POST['paterno'];
 		$this->materno = $_POST['materno'];
@@ -28,11 +28,8 @@ class GETTING
 	{
 		require_once 'cn.php'; 
 		
-		
-		//$selus = "SELECT nombre,paterno FROM aspirante WHERE nombre = '$nom'";
-		//$Resel = $Arco->Cons->query($selus);
 
-		if(($asp == '')or($nom == '')or($pat == '')or($mat == '')or($tel == '')or($dire == '')or($fec == '')or($car == ''))
+		if(($nom == '')or($pat == '')or($mat == '')or($tel == '')or($dire == '')or($fec == '')or($car == ''))
 		{
 			echo 1;
 		}
@@ -47,6 +44,7 @@ class GETTING
 				//una fila afectada se ejecuto correctamente
 			}else{
 				echo 0;
+				
 			}
 		}
 	}
