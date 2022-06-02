@@ -1,4 +1,4 @@
-function cammbiarTexto(tipo){
+/*function cammbiarTexto(tipo){
 	if (tipo == 1){
 		document.getElementById("user").innerHTML = "No. Control" 
 		document.getElementById("contra").innerHTML = "NIP" 
@@ -9,7 +9,7 @@ function cammbiarTexto(tipo){
 		document.getElementById("user").innerHTML = "No. Solicitud"
 		document.getElementById("contra").innerHTML = "NIP"
 	}
-}
+}*/
 
 //--------------------Formato para número de telefono --------------------------
 
