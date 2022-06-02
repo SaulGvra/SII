@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-<?php
-include("cn.php");
-$aspirante = "SELECT * FROM aspirante";
-
-?>
 <html>
         <head>
             <!-- Required meta tags -->
@@ -44,7 +39,7 @@ $aspirante = "SELECT * FROM aspirante";
               <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/kardex.php')
+          include('modulos/datos_personales.php')
           ?>                    
                 
               
