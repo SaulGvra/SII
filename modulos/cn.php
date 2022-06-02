@@ -1,4 +1,8 @@
 <?php
-
-$conexion = mysqli_connect("localhost","root","140217","sii");
-mysqli_set_charset($conexion,"utf8");
+// conexión a la base de datos
+    $username = "root";
+    $password = "140217"; // usar contraseña de bases de datos local
+    $database = "sii"; 
+    $mysqli = new mysqli("localhost", $username, $password, $database);
+    
+?>

@@ -1,27 +1,57 @@
 <?php
-require_once("cn.php");
+class GETTING
+{
+	private $aspirante;
+	private $nombre;
+	private $paterno;
+	private $materno;
+	private $fecha;
+	private $telefono;
+	private $dir;
+	private $carrera;
 
-$nombre = $_POST["nombre"];
-$inicio = $_POST["inicio"];
+	public function __construct()
+	{
+		$this->aspirante = $_POST['ASP-1'];
+		$this->nombre = $_POST['nombre'];
+		$this->paterno = $_POST['paterno'];
+		$this->materno = $_POST['materno'];
+		$this->telefono = $_POST['telefono'];
+		$this->dir = $_POST['dir'];
+		$this->fecha = $_POST['fecha'];
+		$this->carrera = $_POST['carrera'];
 
-$monto = $_POST["monto"];
+		self::How_Action($this->aspirante,$this->nombre,$this->paterno,$this->materno,$this->telefono,$this->dir,$this->fecha,$this->carrera);
+	}
 
-$sql= "INSERT INTO aspirante(nombre,inicio,monto) VALUES('$nombre','$inicio','$monto')";
-$resultado  = mysqli_query($conexion,$sql);
+	public function How_Action($asp,$nom,$pat,$mat,$tel,$dire,$fec,$car)
+	{
+		require_once 'cn.php'; 
+		
+		
+		//$selus = "SELECT nombre,paterno FROM aspirante WHERE nombre = '$nom'";
+		//$Resel = $Arco->Cons->query($selus);
 
-if(resutado){
-	
-	echo "<script>
-	
-	alert('Registro insertado');
-	window.location='index.php';
-	</script>";
-}else {
-	echo
-	"<script>
-	alert('existe alguna falla, favor de intentar nuevamente');
-	window.location = 'index.php';
-	</script>";
+		if(($asp == '')or($nom == '')or($pat == '')or($mat == '')or($tel == '')or($dire == '')or($fec == '')or($car == ''))
+		{
+			echo 1;
+		}
+		else 
+		{
+			$ins = "CALL sp_UpdAspirante('".$asp."','".$nom."','".$pat."','".$mat."','".$tel."','".$fec."','".$dir."','".$car."')";
+			$resultt = mysqli_query ($Arco,$ins);
+			
+
+			if($Arco->affected_rows > 0){ 
+				echo 2;
+				//una fila afectada se ejecuto correctamente
+			}else{
+				echo 0;
+			}
+		}
+	}
 }
+
+$geting = new GETTING();
+mysqli_close($Arco);
 ?>
-	
