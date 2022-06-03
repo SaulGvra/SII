@@ -39,7 +39,7 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/datos_personales.php')
+          include('modulos/datosAlumno.php')
           ?>                    
                 
               
