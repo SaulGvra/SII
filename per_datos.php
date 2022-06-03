@@ -40,7 +40,7 @@
                              
                           
         <?php
-          include('modulos/datos_personales.php')
+          include('modulos/datosPersonal.php')
           ?>    
               
                   
