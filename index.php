@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+    session_start();
+?>
 <html>
         <head>
             <!-- Required meta tags -->
@@ -44,7 +46,7 @@
                 
               
                   
-              <!-- ---------------------Footer----------------------- -->
+        <!-- ---------------------Footer----------------------- -->
           <?php
           include('comp/footer.php')
           ?> 
