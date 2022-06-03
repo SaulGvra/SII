@@ -50,7 +50,7 @@
                 
               </select>
               <div class="invalid-feedback">
-              Selecciona una carrera.
+              Selecciona un rol.
               </div>
             </div>
 
