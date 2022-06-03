@@ -41,10 +41,9 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/inicio_al.php')
+          include('modulos/datosAspirante.php')
           ?>                    
-                
-              
+
                   
         <!-- ---------------------Footer----------------------- -->
           <?php
