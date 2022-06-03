@@ -1,7 +1,9 @@
 
 <div class="principal container-fluid">
     <div class="container">
-        <br><br><br>
+        <br><br>
+        <h1>KARDEX DE CALIFICACIONES</h1>
+        <br>
         <div class="row">
 <?php
     include('conexion.php');
@@ -21,9 +23,9 @@
             $field6name = $row["alu_materno"];
             // Agregar variables al html
             echo '
-            <h5 id="mayus">-ALUMNO: '.$field1name.' '.$field5name.' '.$field6name.'-  -NO CONTROL: '.$field2name.'-</h5>
+            <h5 id="mayus">- ALUMNO: '.$field1name.' '.$field5name.' '.$field6name.'-  -NO CONTROL: '.$field2name.'-</h5>
             <hr>
-            <h5 id="mayus">SEMESTRE ACTUAL: '.$field3name.'- -ESPECIALIDAD:'.$field4name.'-</h5>
+            <h5 id="mayus">- SEMESTRE ACTUAL: '.$field3name.'- -ESPECIALIDAD:'.$field4name.'-</h5>
             ';
         }
         //Se vacía la variable result
