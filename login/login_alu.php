@@ -1,8 +1,5 @@
 <?php
-  session_start();
   include('../conexion.php');
- 
- 
 
   $usuario = $_POST['usuario'];
   $contra = $_POST['contra'];
@@ -14,7 +11,6 @@
   $count = $result->num_rows; 
 
   if ($count > 0) {
-    
     header("location: ../index.php");
   }else{
     echo '<script>alert("Usuario incorrecto");</script>';

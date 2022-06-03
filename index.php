@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+    session_start();
+?>
 <html>
         <head>
             <!-- Required meta tags -->
@@ -39,12 +41,12 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/conexionKardex.php')
+          include('modulos/datosPersonal.php')
           ?>                    
                 
               
                   
-              <!-- ---------------------Footer----------------------- -->
+        <!-- ---------------------Footer----------------------- -->
           <?php
           include('comp/footer.php')
           ?> 
