@@ -7,12 +7,12 @@
                     </div>
                     <ul class="lisst-unstyled components">
                         <li>
-                        <a href="inicioasp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                        <a href="modulos/inicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                         <li>
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                             <ul class="collapse lisst-unstyled" id="pageSubmenu">
                                 <li>
-                                    <a href="../sii/modulos/registro_aspirante.php">Datos personales</a>
+                                    <a href="asp_registro.php">Datos personales</a>
                                 </li>   
                             </ul>
                         </li>
@@ -36,14 +36,14 @@
                                 </div>
                                 <ul class="lisst-unstyled components">
                                     <li>
-                                    <a href="inicioasp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                                    <a href="modulosinicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                                     </li>
                                    
                                     <li>
                                         <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                                         <ul class="collapse lisst-unstyled" id="pageSubmenuDP">
                                             <li>
-                                                <a href="modulos/registro_aspirante.php">Datos personales</a>
+                                            <a href="asp_registro.php">Datos personales</a>
                                             </li>
                                         </ul>
                                     </li>

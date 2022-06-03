@@ -1,4 +1,4 @@
-
+     
 <div class="principal container-fluid">
     <?php include('conexion.php')?>
 <div class="container">

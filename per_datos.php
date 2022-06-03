@@ -33,15 +33,15 @@
         <!-- ---------------------Sidebar----------------------- -->
 
         <?php
-        include('comp/sidebar.php')
+        include('comp/sidebar_per.php')
         ?>
 
         <!-- ---------------------Modulo----------------------- -->
-                              
-          <?php
-          include('modulos/inicio_al.php')
-          ?>                    
-                
+                             
+                          
+        <?php
+          include('modulos/datos_personales.php')
+          ?>    
               
                   
               <!-- ---------------------Footer----------------------- -->
