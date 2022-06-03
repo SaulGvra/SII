@@ -2,21 +2,24 @@
 
 class GETTINGG
   {
-	private $aspirante;
-	private $nip;
-	private $carrera;
+	private $personal;
+	private $contra;
+	private $sal;
+	private $tipo;
 	private $Data;
 
 
       public function __construct()
       {
-		$this->aspirant = $_POST['aspirante'];
-		$this->nipp = $_POST['nip'];
-		$this->carrer = $_POST['carrera'];
+		$this->personall = $_POST['personal'];
+		$this->contraa = $_POST['contra'];
+		$this->sall = $_POST['sal'];
+		$this->tipoo = $_POST['tipo'];
           $this->Data = array(
-            'aspirante' => "$this->aspirant",
-            'nip' => "$this->nipp",
-            'carrera' => "$this->carrer"
+            'personal' => "$this->personall",
+            'contra' => "$this->contraa",
+            'sal' => "$this->sall",
+			'tipo' => "$this->tipoo"
             
         );
 
@@ -33,13 +36,13 @@ class GETTINGG
           $coonect->Con();
         
 
-          if (($aspirante == '') || ($nip == '') || ($carrera == '') ) {
+          if (($personal == '') || ($contra == '') || ($sal == '')|| ($tipo == '')  ) {
               echo '1';
           }
 
          else {
-              //echo $Name. " ". $Name1." ".$LaName." ".$LaName1." ".$Uss. " ".$Ml." ".$Ae." "." ".$G;
-              $Query = "CALL sp_insAspirante('".$aspirant."','".$nipp."','".$carrer."')";
+              
+              $Query = "CALL sp_insPersonal('".$personal."','".$contra."','".$sal."','".$tipo."')";
               $coonect->Cons->query($Query);
               echo '2';
           }
