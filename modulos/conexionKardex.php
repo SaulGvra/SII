@@ -1,3 +1,10 @@
+
+<div class="principal container-fluid">
+    <div class="container">
+        <br><br>
+        <h1>KARDEX DE CALIFICACIONES</h1>
+        <br>
+        <div class="row">
 <?php
     include('conexion.php');
     // consulta datos del alumno
@@ -14,29 +21,26 @@
             $field4name = $row["alu_especialidad"];
             $field5name = $row["alu_paterno"];
             $field6name = $row["alu_materno"];
-        // Agregar variables al html
+            // Agregar variables al html
             echo '
-            <h5 id="mayus">-ALUMNO: '.$field1name.' '.$field5name.' '.$field6name.'-  -NO CONTROL: '.$field2name.'-</h5>
+            <h5 id="mayus">- ALUMNO: '.$field1name.' '.$field5name.' '.$field6name.'-  -NO CONTROL: '.$field2name.'-</h5>
             <hr>
-            <h5 id="mayus">SEMESTRE ACTUAL: '.$field3name.'- -ESPECIALIDAD:'.$field4name.'-</h5>
+            <h5 id="mayus">- SEMESTRE ACTUAL: '.$field3name.'- -ESPECIALIDAD:'.$field4name.'-</h5>
             ';
         }
         //Se vacía la variable result
         $result->free();
     } 
 ?>
-
-<!-- Se cierra el Row de kardex.php-->
-</div>
-                                    <!--CONTINUACION DEL HTML-->
-                                    <br>
-                                        <div class="container">
-                                            <div class="row filas align-items-center">
-
+    <!--CONTINUACION DEL HTML-->
+        </div>
+    <br>
+    <div class="container">
+        <div class="row filas align-items-center">
 <?php
+
 function semes ($semes,$control,$mysqli)
 {
-
     $query = "select * from kardex3 where alu_cve_nocontrol='".$control."' and mat_semestre='".$semes."';";
     $aux1=0;
     $prom=0;
@@ -74,7 +78,7 @@ function semes ($semes,$control,$mysqli)
             $field3name = $row["mat_creditos"];
             //Campo calculado
             $field4name = ($row["cal_unidad1"]+$row["cal_unidad2"]+$row["cal_unidad3"]+$row["cal_unidad4"]+$row["cal_unidad5"]+$row["cal_unidad6"])/6;
-        // Agregar variables al html
+            // Agregar variables al html
             echo '
             <div class="row" id="tag1">
                 <div class="col"><p>'.$aux1.'</p></div>
@@ -84,16 +88,16 @@ function semes ($semes,$control,$mysqli)
                 <div class="col"><p>'.$field4name.'</p></div>
         </div>
             ';
-        //CALCULO DE PROMEDIO
-        $prom=$prom+$field4name;
-        //CALCULO DE TOTAL DE CREDITOS
-        if($field4name>70)
-            {$cred=$cred+$field3name;}
-        $tcred=$tcred+$field3name;
+            //CALCULO DE PROMEDIO
+            $prom=$prom+$field4name;
+            //CALCULO DE TOTAL DE CREDITOS
+            if($field4name>70)
+                {$cred=$cred+$field3name;}
+            $tcred=$tcred+$field3name;
         }
         $result->free();
         if($prom!=0)
-        {$prom=$prom/$aux1;}
+            {$prom=$prom/$aux1;}
     } 
     //AGREGAR FILA DE RESULTADOS
     if($prom!=0)
@@ -115,8 +119,13 @@ function semes ($semes,$control,$mysqli)
 $sem=1;
 while ($sem<=13)
 {
-semes ($sem,$field2name,$mysqli);
-$sem=$sem+1;
+    semes ($sem,$field2name,$mysqli);
+    $sem=$sem+1;
 }
-
 ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -29,7 +29,7 @@
 
                 <div class="imgHeader col">
                         <div class="">
-                                <button type="image" class="btn  changer estBtn d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><img src = "../imagenes/lista.png" width="60vw"></button>
+                                <button type="image" class="btn  changer estBtn d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><img src = "imagenes/lista.png" width="60vw"></button>
                         </div>
 
                     <div>
