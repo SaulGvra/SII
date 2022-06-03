@@ -26,7 +26,7 @@ class GETTING
 
 	public function How_Action($asp,$nom,$pat,$mat,$tel,$dire,$fec,$car)
 	{
-		require_once 'cn.php'; 
+		require_once '../conexion.php'; 
 		
 
 		if(($nom == '')or($pat == '')or($mat == '')or($tel == '')or($dire == '')or($fec == '')or($car == ''))
@@ -35,11 +35,14 @@ class GETTING
 		}
 		else 
 		{
-			$ins = "CALL sp_UpdAspirante('".$asp."','".$nom."','".$pat."','".$mat."','".$tel."','".$fec."','".$dir."','".$car."')";
-			$resultt = mysqli_query ($Arco,$ins);
+			$query = "CALL sp_UpdAspirante('".$asp."','".$nom."','".$pat."','".$mat."','".$tel."','".$fec."','".$dire."','".$car."')";
+			//$resultt = mysqli_query ($mysqli,$ins);
+
+			$result = $mysqli->query($query);
+  			//$count = $result->num_rows; 
 			
 
-			if($Arco->affected_rows > 0){ 
+			if($mysqli->affected_rows){ 
 				echo 2;
 				//una fila afectada se ejecuto correctamente
 			}else{
@@ -51,5 +54,4 @@ class GETTING
 }
 
 $geting = new GETTING();
-mysqli_close($Arco);
 ?>
