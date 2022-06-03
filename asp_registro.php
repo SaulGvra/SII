@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<?php
-    session_start();
-?>
+
 <html>
         <head>
             <!-- Required meta tags -->
@@ -35,18 +33,18 @@
         <!-- ---------------------Sidebar----------------------- -->
 
         <?php
-        include('comp/sidebar.php')
+        include('comp/sidebar_asp.php')
         ?>
 
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/inicio_al.php')
+          include('modulos/registro_aspirante.php')
           ?>                    
                 
               
                   
-        <!-- ---------------------Footer----------------------- -->
+              <!-- ---------------------Footer----------------------- -->
           <?php
           include('comp/footer.php')
           ?> 

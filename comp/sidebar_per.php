@@ -7,16 +7,16 @@
                     </div>
                     <ul class="lisst-unstyled components">
                         <li>
-                        <a href="index.html"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                        <a href="modulos/inicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
+                            <a href="per_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
                         </li>
                         <li>
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                             <ul class="collapse lisst-unstyled" id="pageSubmenu">
                                 <li>
-                                    <a href="modulos/registro_personal.php">Datos personales</a>
+                                    <a href="per_datos.php">Datos personales</a>
                                 </li>   
                             </ul>
                         </li>
@@ -39,18 +39,18 @@
                                     <h3 ><i class="fas fa-align-left" ></i> Menú</h3>
                                 </div>
                                 <ul class="lisst-unstyled components">
-                                    <li>
-                                    <a href="inicio_per"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                                <li>
+                                    <a href="modulos/inicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                                     </li>
-                                    
                                     <li>
-                                        <a href="#"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
+                                        <a href="per_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
                                     </li>
+                                    <li>
                                     <li>
                                         <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                                         <ul class="collapse lisst-unstyled" id="pageSubmenuDP">
                                             <li>
-                                                <a href="modulos/registro_personal.php">Datos personales</a>
+                                            <a href="per_datos.php">Datos personales</a>
                                             </li>
                                         </ul>
                                     </li>

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<?php
-    session_start();
-?>
+
 <html>
         <head>
             <!-- Required meta tags -->
@@ -41,12 +39,12 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/inicio_al.php')
+          include('modulos/datos_personales.php')
           ?>                    
                 
               
                   
-        <!-- ---------------------Footer----------------------- -->
+              <!-- ---------------------Footer----------------------- -->
           <?php
           include('comp/footer.php')
           ?> 
