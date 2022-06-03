@@ -2,6 +2,8 @@
 <div class="principal container-fluid">
 
 
+<!-- xddddddddd -->
+
         <?php
             include('conexion.php');
             // consulta datos del alumno

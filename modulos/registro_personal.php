@@ -1,4 +1,4 @@
-div class="principal container-fluid">
+<div class="principal container-fluid">
 
 <form action="modulos/insertarp.php" method="post">
 <div class="paddingt row ">
