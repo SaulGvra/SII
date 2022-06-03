@@ -33,13 +33,13 @@
         <!-- ---------------------Sidebar----------------------- -->
 
         <?php
-        include('comp/sidebar_per.php')
+        include('comp/sidebar.php')
         ?>
 
-              <!-- ---------------------Modulo----------------------- -->
+        <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/datos_personales.php')
+          include('modulos/conexionKardex.php')
           ?>                    
                 
               
@@ -48,16 +48,6 @@
           <?php
           include('comp/footer.php')
           ?> 
-
-        <?php
-        include('modulos/registro_aspirante.php')
-        ?>                    
-
-        <!-- ---------------------Footer----------------------- -->
-        
-        <?php
-        include('comp/footer.php')
-        ?> 
 
         <!-- ----------------------Scripts------------------------- -->
 
