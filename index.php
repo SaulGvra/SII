@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 
-<?php
-$aspirante = "SELECT * FROM aspirante";
-
-?>
 <html>
         <head>
             <!-- Required meta tags -->
@@ -37,10 +33,21 @@ $aspirante = "SELECT * FROM aspirante";
         <!-- ---------------------Sidebar----------------------- -->
 
         <?php
-        include('comp/sidebar.php')
+        include('comp/sidebar_per.php')
         ?>
 
-        <!-- ---------------------Modulo----------------------- -->
+              <!-- ---------------------Modulo----------------------- -->
+                              
+          <?php
+          include('modulos/datos_personales.php')
+          ?>                    
+                
+              
+                  
+              <!-- ---------------------Footer----------------------- -->
+          <?php
+          include('comp/footer.php')
+          ?> 
 
         <?php
         include('modulos/conexionBoleta.php')

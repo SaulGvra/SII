@@ -1,4 +1,15 @@
 <?php
+$host="localhost";
+$port=3306;
+$socket="";
+$user="root";
+$password="140217";
+$dbname="sii";
 
-$conexion = mysqli_connect("localhost","root","140217","sii");
-mysqli_set_charset($conexion,"utf8");
+$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
+ or die ('Could not connect to the database server' . mysqli_connect_error());
+
+//$con->close();
+
+
+?>
