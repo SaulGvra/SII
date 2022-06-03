@@ -43,7 +43,7 @@ $aspirante = "SELECT * FROM aspirante";
         <!-- ---------------------Modulo----------------------- -->
 
         <?php
-        include('modulos/conexionKardex.php')
+        include('modulos/conexionBoleta.php')
         ?>                    
 
         <!-- ---------------------Footer----------------------- -->
