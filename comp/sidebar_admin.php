@@ -8,7 +8,7 @@
                     <ul class="lisst-unstyled components">
                         
                     <li>
-                                    <a href="modulos/inicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                                    <a href="index_admin.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                                     </li>
 
                         <li>
