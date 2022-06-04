@@ -9,7 +9,7 @@
       {
           $this->Keyss['Host'] = 'localhost';
           $this->Keyss['DbName'] = 'sii';
-          $this->Keyss['User'] = 'root';
+          $this->Keyss['User'] = 'adm';
           $this->Keyss['Pass'] = '';           //this databae don not have pass
 
           
