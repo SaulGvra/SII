@@ -4,8 +4,6 @@ class GETTINGG
   {
 	private $nocontrol;
 	private $contra;
-	private $especialidad;
-	private $estatus;
   private $carrera;
 	private $Data;
 
@@ -14,14 +12,10 @@ class GETTINGG
       {
 		$this->nocontroll = $_POST['nocontrol'];
 		$this->contraa = $_POST['contra'];
-		$this->especialidadd = $_POST['especialidad'];
-		$this->estatuss = $_POST['estatus'];
     $this->carreraa = $_POST['carrera'];
           $this->Data = array(
-            'nocontrol' => "$this->nocontoll",
+            'nocontrol' => "$this->nocontroll",
             'contra' => "$this->contraa",
-            'especialidad' => "$this->especialidadd",
-            'estatus' => "$this->estatuss",
             'carrera' => "$this->carreraa"
             
         );
@@ -39,15 +33,15 @@ class GETTINGG
           $coonect->Con();
         
 
-          if (($nocontrol == '') || ($contra == '') || ($especialidad == '')|| ($estatus == '') || ($carrera == '') ) {
-              echo '1';
+          if (($nocontrol == '') || ($contra == '') || ($carrera == '') ) {
+              echo '0';
           }
 
          else {
               
-              $Query = "CALL sp_insPersonal('".$nocontrol."','".$contra."','".$especialidad."','".$estatus."','".$carrera."')";
+              $Query = "CALL sp_insAlumno('".$nocontrol."','".$contra."','".$carrera."')";
               $coonect->Cons->query($Query);
-              echo '2';
+              echo '1';
           }
       }
   }

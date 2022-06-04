@@ -12,15 +12,12 @@
           
           <div class="col-sm-4">
               <label for="firstName" class="form-label">No. Contol</label>
-              <input type="text" class="form-control" name="nocontol" placeholder="" value="" required>
+              <input type="text" class="form-control" name="nocontrol" placeholder="" value="" required>
               <div class="invalid-feedback">
               Introduce número de control.
               </div>
             </div>
       
-         
-
-          
             <div class="col-sm-4">
               <label for="firstName" class="form-label">Contraseña</label>
               <input type="text" class="form-control" name="contra" placeholder="" value="" required>
@@ -30,36 +27,8 @@
             </div>
             </div>
 
-            <div class="row g-3">
-            <h6 class="mb-3" id="titulos">Información Escolar</h6>
-            
-            
-            
-            <div class="col-sm-4">
-              <label for="firstName" class="form-label">Especialidad</label>
-              <input type="text" class="form-control" name="esp" placeholder="" value="" required>
-              <div class="invalid-feedback">
-              Introduce un NIP.
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Estatus</label>
-              <select class="form-select" name="estatus" required>
-                <option value="">Seleccionar...</option>
-                <option>ACTIVO</option>
-                <option>INACTIVO</option>
-                <option>OTRO</option>
-                
-              </select>
-              <div class="invalid-feedback">
-              Selecciona una un estatus.
-              </div>
-            </div>
-
-        </div>
+          
         <div class="row g-3">
-          <h6 class="mb-3" id="titulos">Carrera a elegir</h6>
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Carrera</label>
