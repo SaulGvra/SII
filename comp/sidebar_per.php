@@ -9,9 +9,7 @@
                         <li>
                         <a href="index_per.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                         </li>
-                        <li>
-                            <a href="per_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
-                        </li>
+                        
                         <li>
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                             <ul class="collapse lisst-unstyled" id="pageSubmenu">
@@ -42,9 +40,7 @@
                                 <li>
                                     <a href="index_per.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                                     </li>
-                                    <li>
-                                        <a href="per_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
-                                    </li>
+                                    
                                     <li>
                                     <li>
                                         <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>

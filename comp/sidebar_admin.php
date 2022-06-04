@@ -6,10 +6,10 @@
                         <h3 ><i class="fas fa-align-left" ></i> Menú</h3>
                     </div>
                     <ul class="lisst-unstyled components">
-                        <li>
-                        <a href="index_admin.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
-                        </li>
-
+                        
+                    <li>
+                                    <a href="modulos/inicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                                    </li>
 
                         <li>
                             <a href="#pageSubmenuad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
@@ -22,6 +22,21 @@
                                 </li>  
                                 <li>
                                     <a href="ins_personal.php">Personal</a>
+                                </li>   
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#pageSubmenuadba" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Bajas</a>
+                            <ul class="collapse lisst-unstyled" id="pageSubmenuadba">
+                                <li>
+                                    <a href="bajaAlumno.php">Alumnos</a>
+                                </li>  
+                                <li>
+                                    <a href="bajaAspirante.php">Aspirantes</a>
+                                </li>  
+                                <li>
+                                    <a href="bajaPersonal.php">Personal</a>
                                 </li>   
                             </ul>
                         </li>
@@ -73,6 +88,21 @@
                                             </li>  
                                             <li>
                                                 <a href="ins_personal.php">Personal</a>
+                                            </li>   
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#pageSubmenuadba" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Bajas</a>
+                                        <ul class="collapse lisst-unstyled" id="pageSubmenuadba">
+                                            <li>
+                                                <a href="bajaAlumno.php">Alumnos</a>
+                                            </li>  
+                                            <li>
+                                                <a href="bajaAspirante.php">Aspirantes</a>
+                                            </li>  
+                                            <li>
+                                                <a href="bajaPersonal.php">Personal</a>
                                             </li>   
                                         </ul>
                                     </li>
