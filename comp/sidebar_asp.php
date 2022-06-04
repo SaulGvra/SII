@@ -12,7 +12,7 @@
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Información</a>
                             <ul class="collapse lisst-unstyled" id="pageSubmenu">
                                 <li>
-                                    <a href="asp_registro.php">Datos personales</a>
+                                    <a href="asp_datos.php">Datos personales</a>
                                 </li>   
                             </ul>
                         </li>
@@ -43,7 +43,7 @@
                                         <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Información</a>
                                         <ul class="collapse lisst-unstyled" id="pageSubmenuDP">
                                             <li>
-                                            <a href="asp_registro.php">Datos personales</a>
+                                            <a href="asp_datos.php">Datos personales</a>
                                             </li>
                                         </ul>
                                     </li>
