@@ -7,7 +7,7 @@
                     </div>
                     <ul class="lisst-unstyled components">
                         <li>
-                        <a href="modulos/inicio_per.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                        <a href="index_per.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                         </li>
                         <li>
                             <a href="per_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
@@ -16,7 +16,7 @@
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                             <ul class="collapse lisst-unstyled" id="pageSubmenu">
                                 <li>
-                                    <a href="per_datos.php">Datos personales</a>
+                                    <a href="updatePersonal.php">Datos personales</a>
                                 </li>   
                             </ul>
                         </li>
@@ -40,7 +40,7 @@
                                 </div>
                                 <ul class="lisst-unstyled components">
                                 <li>
-                                    <a href="modulos/inicio_per.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
+                                    <a href="index_per.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                                     </li>
                                     <li>
                                         <a href="per_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
@@ -50,7 +50,7 @@
                                         <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
                                         <ul class="collapse lisst-unstyled" id="pageSubmenuDP">
                                             <li>
-                                            <a href="per_datos.php">Datos personales</a>
+                                            <a href="updatePersonal.php">Datos personales</a>
                                             </li>
                                         </ul>
                                     </li>
