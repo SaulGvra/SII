@@ -41,7 +41,7 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/boleta.php')
+          include('modulos/conexionBoleta.php')
           ?>                    
                 
               
