@@ -9,6 +9,8 @@
                         <li>
                         <a href="index.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                         </li>
+
+
                         <li class="active">
                             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-id-card"></i> Información Escolar</a>
                             <ul class="collapse lisst-unstyled" id="homeSubmenu">
@@ -20,6 +22,8 @@
                                 </li>       
                             </ul>
                         </li>
+
+
                         <li>
                             <a href="al_horario.php"><i class="fa-solid fa-calendar-days"></i>  Horario</a>
                         </li>
@@ -34,7 +38,7 @@
                         <br><br><br>
                         <hr style="width:100%;text-align:left;margin-left:0">
                         <li>
-                            <a href="acceso.html"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
+                            <a href="logout.php"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
                         </li>
                     </ul>
                 </nav>
@@ -79,7 +83,7 @@
                     
                                     <hr style="width:100%;text-align:left;margin-left:0">
                                     <li>
-                                        <a href="acceso.html"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
+                                        <a href="logout.php"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
                                     </li>
                                 </ul>
                             </nav>

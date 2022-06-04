@@ -23,7 +23,7 @@
                         <br><br><br>
                         <hr style="width:100%;text-align:left;margin-left:0">
                         <li>
-                            <a href="acceso.html"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
+                            <a href="logout.php"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,7 +58,7 @@
                     
                                     <hr style="width:100%;text-align:left;margin-left:0">
                                     <li>
-                                        <a href="acceso.html"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
+                                        <a href="logout.php"><i class="fa-solid fa-house-lock"></i> Cerrar Sessión</a>
                                     </li>
                                 </ul>
                             </nav>
