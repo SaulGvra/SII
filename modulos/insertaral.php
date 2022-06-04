@@ -41,7 +41,7 @@ class GETTINGG
               
               $Query = "CALL sp_insAlumno('".$nocontrol."','".$contra."','".$carrera."')";
               $coonect->Cons->query($Query);
-              echo '1';
+              header('Location: ' . $_SERVER['HTTP_REFERER']);
           }
       }
   }

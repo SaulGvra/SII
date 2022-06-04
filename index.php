@@ -41,7 +41,7 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/bajas.php')
+          include('modulos/richiEjemplo.php')
           ?>                    
 
                   
