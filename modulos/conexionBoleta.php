@@ -24,7 +24,7 @@ echo '
                                             </div>
                                             <div class="container">
                                             <br>
-                                                <button class="w-100 btn btn-primary btn-lg" id="registrar" onclick="window.location.href='index.php?name=true'">Consultar</button>
+                                                <button class="w-100 btn btn-primary btn-lg" id="registrar" onclick="window.location.href='al_boleta.php?name=true'">Consultar</button>
                                             </div>
                                         </div>
                                         <div class="col-9">
