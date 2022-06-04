@@ -39,9 +39,10 @@ class GETTINGG
 
          else {
               //echo $Name. " ". $Name1." ".$LaName." ".$LaName1." ".$Uss. " ".$Ml." ".$Ae." "." ".$G;
-              $Query = "CALL sp_insAspirante('".$aspirant."','".$nipp."','".$carrer."')";
+              $Query = "CALL sp_insAspirante('".$aspirante."','".$nip."','".$carrera."')";
               $coonect->Cons->query($Query);
-              echo '2';
+              header('Location: ' . $_SERVER['HTTP_REFERER']);
+
           }
       }
   }
