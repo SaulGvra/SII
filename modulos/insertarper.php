@@ -13,13 +13,11 @@ class GETTINGG
       {
 		$this->personall = $_POST['personal'];
 		$this->contraa = $_POST['contra'];
-		$this->sall = $_POST['sal'];
 		$this->tipoo = $_POST['tipo'];
           $this->Data = array(
             'personal' => "$this->personall",
             'contra' => "$this->contraa",
-            'sal' => "$this->sall",
-			'tipo' => "$this->tipoo"
+		      	'tipo' => "$this->tipoo"
             
         );
 
@@ -36,15 +34,15 @@ class GETTINGG
           $coonect->Con();
         
 
-          if (($personal == '') || ($contra == '') || ($sal == '')|| ($tipo == '')  ) {
-              echo '1';
+          if (($personal == '') || ($contra == '')|| ($tipo == '')  ) {
+              echo '0';
           }
 
          else {
               
-              $Query = "CALL sp_insPersonal('".$personal."','".$contra."','".$sal."','".$tipo."')";
+              $Query = "CALL sp_insPersonal('".$personal."','".$contra."','".$tipo."')";
               $coonect->Cons->query($Query);
-              echo '2';
+              header('Location: ' . $_SERVER['HTTP_REFERER']);
           }
       }
   }

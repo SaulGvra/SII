@@ -28,15 +28,6 @@
               </div>
             </div>
 
-            <div class="col-sm-4">
-              <label for="firstName" class="form-label">Salario</label>
-              <input type="text" class="form-control" name="sal" placeholder="" value="" required>
-              <div class="invalid-feedback">
-              Introduce un salario.
-              </div>
-            </div>
-
-           
             <h6 class="mb-3" id="titulos">Rol del Personal</h6>
 
             <div class="col-sm-6">
