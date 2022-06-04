@@ -27,30 +27,9 @@
                         </li>
 
                         <li>
-                            <a href="#pageSubmenuadba" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Bajas</a>
-                            <ul class="collapse lisst-unstyled" id="pageSubmenuadba">
-                                <li>
-                                    <a href="bajaAlumno.php">Alumnos</a>
-                                </li>  
-                                <li>
-                                    <a href="bajaAspirante.php">Aspirantes</a>
-                                </li>  
-                                <li>
-                                    <a href="bajaPersonal.php">Personal</a>
-                                </li>   
-                            </ul>
+                        <a href="bajas.php"><i class="fa-solid fa-house-user"> </i> Bajas</a>
                         </li>
-
-
-                        <li>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Información Personal</a>
-                            <ul class="collapse lisst-unstyled" id="pageSubmenu">
-                                <li>
-                                    <a href="per_datos.php">Datos personales</a>
-                                </li>   
-                            </ul>
-                        </li>
-
+                      
                         <li>
                             <a href="index_reporte.php"><i class="fa-solid fa-calendar-days"></i> Reporte</a>
                         </li>
@@ -93,27 +72,9 @@
                                     </li>
 
                                     <li>
-                                        <a href="#pageSubmenuadba" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Bajas</a>
-                                        <ul class="collapse lisst-unstyled" id="pageSubmenuadba">
-                                            <li>
-                                                <a href="bajaAlumno.php">Alumnos</a>
-                                            </li>  
-                                            <li>
-                                                <a href="bajaAspirante.php">Aspirantes</a>
-                                            </li>  
-                                            <li>
-                                                <a href="bajaPersonal.php">Personal</a>
-                                            </li>   
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#pageSubmenuDP" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
-                                        <ul class="collapse lisst-unstyled" id="pageSubmenuDP">
-                                            <li>
-                                            <a href="per_datos.php">Datos personales</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                        <a href="bajas.php"><i class="fa-solid fa-house-user"> </i> Bajas</a>
+                                        </li>
+                                    
                                     <br><br><br>
                     
                                     <hr style="width:100%;text-align:left;margin-left:0">
