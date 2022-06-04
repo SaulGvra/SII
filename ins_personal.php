@@ -35,7 +35,7 @@
         <!-- ---------------------Sidebar----------------------- -->
 
         <?php
-        include('comp/sidebar_per.php')
+        include('comp/sidebar_admin.php')
         ?>
 
         <!-- ---------------------Modulo----------------------- -->
