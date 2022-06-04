@@ -19,8 +19,7 @@ $usuario= $_SESSION['user'];
                 echo '
                 <div class="principal container-fluid">
                 <div class="row">
-                    
-                    <h1>Buenas tardes, '.$nombre.'</h1>
+                    <h1 id="bloque"> '.$nombre.',</h1>
                 </div>                    
                 
                 ';
@@ -161,3 +160,34 @@ $usuario= $_SESSION['user'];
 
             </div>
     </main>
+
+    <script>
+                            let getBlock = document.getElementById("bloque");
+                            let newElement = document.createElement("h1");
+                            let fecha = new Date();
+                            let hora = fecha.getHours();
+                            console.log(hora);
+                            let crearTexto;
+
+                            if (hora >= 5 && hora < 12) {
+                                crearTexto = "Buenos días.";
+                            }
+
+                            else if (hora >= 12 && hora < 19) {
+                                crearTexto = "Buenas tardes.";
+                            }
+
+                            else if (hora >= 19 || hora < 5) {
+                                crearTexto = "Buenas noches.";
+                            }
+
+                            else {
+                                crearTexto = "XD";
+                            }
+
+                            let crearTextoElem = document.createTextNode(crearTexto);
+                            newElement.appendChild(crearTextoElem);
+                            getBlock.appendChild(newElement);
+                            newElement.setAttribute("class", "welcome");
+
+                        </script>

@@ -5,7 +5,7 @@ $usuario= $_SESSION['user'];
             include('conexion.php');
 
             // consulta del nombre (solo el nombre)
-            $query = "SELECT personal.per_nombre FROM personal where personal.per_cve_personal='PER-4';";
+            $query = "SELECT personal.per_nombre FROM personal where personal.per_cve_personal='$usuario';";
             // Guardar datos del registro en variables
             // EL if es para ver que el query te devolvió registros
             if ($result = $mysqli->query($query)) {
@@ -19,8 +19,7 @@ $usuario= $_SESSION['user'];
                 echo '
                 <div class="principal container-fluid">
                 <div class="row">
-                    
-                    <h1>Buenas tardes, '.$nombre.'</h1>
+                    <h1 id="bloque"> '.$nombre.',</h1>
                 </div>                    
                 
                 ';
@@ -38,7 +37,7 @@ $usuario= $_SESSION['user'];
 			a.per_cve_personal as 'Usuario',  ad.cla_salon as 'Salon', 
 			ad.cla_horario as 'Horario',ad.mat_cve_materia2 as 'ClaveMateria', m.mat_nombre as 'Materia'
 			FROM clase ad inner join personal as a on  a.per_cve_personal = ad.per_cve_personal
-			inner join materia as m on  m.mat_cve_materia = ad.mat_cve_materia2 where a.per_cve_personal = 'PER-4';";
+			inner join materia as m on  m.mat_cve_materia = ad.mat_cve_materia2 where a.per_cve_personal = '$usuario';";
 
             // Guardar datos del registro en variables
             // EL if es para ver que el query te devolvió registros
@@ -48,11 +47,6 @@ $usuario= $_SESSION['user'];
                 {
                     $field1name = $row["Nombre"];
                     $field2name = $row["Usuario"];
-                    $field3name = $row["Salon"];
-					$field4name = $row["Horario"];
-                    $field5name = $row["ClaveMateria"];
-                    $field6name = $row["Materia"];
-                  
                 }
                 
                     // Agregar variables al html
@@ -97,10 +91,7 @@ $usuario= $_SESSION['user'];
         } 
 
 ?>
-                                            </div>
-                                        </div>
-                                    </div>
-									
+
                                     <div class="row align-items-center paddTop5">
                                         <div class="col-12">
                                         <h5>
@@ -155,4 +146,34 @@ $usuario= $_SESSION['user'];
 </main>
 </div>
 
-</div>
+
+<script>
+                            let getBlock = document.getElementById("bloque");
+                            let newElement = document.createElement("h1");
+                            let fecha = new Date();
+                            let hora = fecha.getHours();
+                            console.log(hora);
+                            let crearTexto;
+
+                            if (hora >= 5 && hora < 12) {
+                                crearTexto = "Buenos días.";
+                            }
+
+                            else if (hora >= 12 && hora < 19) {
+                                crearTexto = "Buenas tardes.";
+                            }
+
+                            else if (hora >= 19 || hora < 5) {
+                                crearTexto = "Buenas noches.";
+                            }
+
+                            else {
+                                crearTexto = "XD";
+                            }
+
+                            let crearTextoElem = document.createTextNode(crearTexto);
+                            newElement.appendChild(crearTextoElem);
+                            getBlock.appendChild(newElement);
+                            newElement.setAttribute("class", "welcome");
+
+                        </script>
