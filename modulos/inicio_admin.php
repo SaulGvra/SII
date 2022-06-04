@@ -5,14 +5,14 @@ $usuario= $_SESSION['user'];
             include('conexion.php');
 
             // consulta del nombre (solo el nombre)
-            $query = "select aspirante.asp_nombre from aspirante where asp_cve_aspirante = 'ASP-5';";
+            $query = "SELECT personal.per_nombre FROM personal where personal.per_cve_personal='PER-3';";
             // Guardar datos del registro en variables
             // EL if es para ver que el query te devolvió registros
             if ($result = $mysqli->query($query)) {
                 //Da vuelta por cada fila encontrada
                 while ($row = $result->fetch_assoc()) 
                 {
-                    $nombre = $row["asp_nombre"];
+                    $nombre = $row["per_nombre"];
                 }
 
                 // Agregar variables al html
@@ -34,9 +34,9 @@ $usuario= $_SESSION['user'];
 //----------------- Este es para seguir llenando ----------------------------------------------------------------------------------------------
 
             // consulta datos del alumno
-            $query = "SELECT   a.asp_cve_aspirante as 'Usuario',
-			concat( a.asp_nombre , ' ', a.asp_paterno,  ' ', a.asp_materno) AS 'Nombre', c.carrera_nombre as 'Carrera'
-			FROM aspirante a inner join carrera as c on  c.car_cve_carrera = a.car_cve_carrera where a.asp_cve_aspirante = 'ASP-5';";
+            $query = "SELECT   per_cve_personal as 'Usuario',
+						concat( per_nombre , ' ', per_paterno,  ' ', per_materno) AS 'Nombre', per_tipo as 'Tipo'
+						FROM personal where per_cve_personal='PER-3';";
 
             // Guardar datos del registro en variables
             // EL if es para ver que el query te devolvió registros
@@ -46,7 +46,7 @@ $usuario= $_SESSION['user'];
                 {
                     $field1name = $row["Usuario"];
                     $field2name = $row["Nombre"];
-                    $field3name = $row["Carrera"];
+                    $field3name = $row["Tipo"];
                 }
                 
                     // Agregar variables al html
@@ -58,7 +58,7 @@ $usuario= $_SESSION['user'];
                         <br><br>
                             <div class="col-11">
                                 <h5>
-                                    Aspirante
+                                    Administrador
                                 </h5>
                                 <hr>
                             </div>
@@ -87,7 +87,7 @@ $usuario= $_SESSION['user'];
                                     <div class="col">
                                         <div class="conteiner">
                                             <div class="row">
-                                                <b>Carrera</b>
+                                                <b>Tipo</b>
                                             </div>
                                             <div class="row">
         ';

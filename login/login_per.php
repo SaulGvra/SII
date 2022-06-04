@@ -23,11 +23,11 @@
 
           if($field1name == "Master"){
                 
-                header("location: ../boleta.php");
+                header("location: ../index_admin.php");
   
           }else if($field1name == "Maestro"){
   
-                header("location: ../per_datos.php");
+                header("location: ../index_per.php");
   
           }
       }

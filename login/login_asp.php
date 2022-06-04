@@ -14,7 +14,7 @@
 
   if ($count > 0) {
     $_SESSION['user'] = $usuario;
-    header("location: ../index.php");
+    header("location: ../index_asp.php");
   }else{
     echo '<script>alert("Usuario incorrecto");</script>';
     header("location: ../acceso.php");

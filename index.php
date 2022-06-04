@@ -41,7 +41,7 @@
         <!-- ---------------------Modulo----------------------- -->
                               
           <?php
-          include('modulos/richiEjemplo.php')
+          include('modulos/inicio_al.php')
           ?>                    
 
                   
