@@ -2,21 +2,21 @@
 
 class GETTINGG
   {
-	private $aspirante;
-	private $nip;
-	private $carrera;
+	private $nocontrol;
+	private $contra;
+  private $carrera;
 	private $Data;
 
 
       public function __construct()
       {
-		$this->aspirant = $_POST['aspirante'];
-		$this->nipp = $_POST['nip'];
-		$this->carrer = $_POST['carrera'];
+		$this->nocontroll = $_POST['nocontrol'];
+		$this->contraa = $_POST['contra'];
+    $this->carreraa = $_POST['carrera'];
           $this->Data = array(
-            'aspirante' => "$this->aspirant",
-            'nip' => "$this->nipp",
-            'carrera' => "$this->carrer"
+            'nocontrol' => "$this->nocontroll",
+            'contra' => "$this->contraa",
+            'carrera' => "$this->carreraa"
             
         );
 
@@ -33,16 +33,15 @@ class GETTINGG
           $coonect->Con();
         
 
-          if (($aspirante == '') || ($nip == '') || ($carrera == '') ) {
-              echo '1';
+          if (($nocontrol == '') || ($contra == '') || ($carrera == '') ) {
+              echo '0';
           }
 
          else {
-              //echo $Name. " ". $Name1." ".$LaName." ".$LaName1." ".$Uss. " ".$Ml." ".$Ae." "." ".$G;
-              $Query = "CALL sp_insAspirante('".$aspirante."','".$nip."','".$carrera."')";
+              
+              $Query = "CALL sp_insAlumno('".$nocontrol."','".$contra."','".$carrera."')";
               $coonect->Cons->query($Query);
               header('Location: ' . $_SERVER['HTTP_REFERER']);
-
           }
       }
   }

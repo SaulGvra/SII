@@ -1,8 +1,29 @@
 <?php
-// conexión a la base de datos
-    $username = "root";
-    $password = ""; // usar contraseña de bases de datos local
-    $database = "sii"; 
-    $mysqli = new mysqli("localhost", $username, $password, $database);
- 
-?>
+
+  class CONNECCT
+  {
+      public $keyss = array();
+      public $Cons;
+
+      public function Con()
+      {
+          $this->Keyss['Host'] = 'localhost';
+          $this->Keyss['DbName'] = 'sii';
+          $this->Keyss['User'] = 'adm';
+          $this->Keyss['Pass'] = '';           //this databae don not have pass
+
+          
+          self::Open_Conect();
+      }
+
+      public function Open_Conect()
+      {
+          $this->Cons = new mysqli($this->Keyss['Host'], $this->Keyss['User'], $this->Keyss['Pass'], $this->Keyss['DbName']);
+/*
+          if ($this->Cons->connect_errno) {
+              echo 'La conexión fallo';
+          } else {
+              echo 'Conexión exitosa';
+          }*/
+      }
+  }
