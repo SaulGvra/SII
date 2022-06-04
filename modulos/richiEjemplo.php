@@ -6,14 +6,14 @@
             include('conexion.php');
 
             // consulta del nombre (solo el nombre)
-            $query = "SELECT personal.per_nombre FROM personal where personal.per_cve_personal='PER-4';";
+            $query = "select aspirante.asp_nombre from aspirante where asp_cve_aspirante = 'ASP-5';";
             // Guardar datos del registro en variables
             // EL if es para ver que el query te devolvió registros
             if ($result = $mysqli->query($query)) {
                 //Da vuelta por cada fila encontrada
                 while ($row = $result->fetch_assoc()) 
                 {
-                    $nombre = $row["per_nombre"];
+                    $nombre = $row["asp_nombre"];
                 }
 
                 // Agregar variables al html
@@ -32,14 +32,12 @@
             } 
 
 
-//----------------- Este es para llenar los datos del personal ----------------------------------------------------------------------------------------------
+//----------------- Este es para seguir llenando ----------------------------------------------------------------------------------------------
 
             // consulta datos del alumno
-            $query = "SELECT  concat( a.per_nombre , ' ', a.per_paterno,  ' ', a.per_materno) AS 'Nombre', 
-			a.per_cve_personal as 'Usuario',  ad.cla_salon as 'Salon', 
-			ad.cla_horario as 'Horario',ad.mat_cve_materia2 as 'ClaveMateria', m.mat_nombre as 'Materia'
-			FROM clase ad inner join personal as a on  a.per_cve_personal = ad.per_cve_personal
-			inner join materia as m on  m.mat_cve_materia = ad.mat_cve_materia2 where a.per_cve_personal = 'PER-4';";
+            $query = "SELECT   a.asp_cve_aspirante as 'Usuario',
+			concat( a.asp_nombre , ' ', a.asp_paterno,  ' ', a.asp_materno) AS 'Nombre', c.carrera_nombre as 'Carrera'
+			FROM aspirante a inner join carrera as c on  c.car_cve_carrera = a.car_cve_carrera where a.asp_cve_aspirante = 'ASP-5';";
 
             // Guardar datos del registro en variables
             // EL if es para ver que el query te devolvió registros
@@ -47,111 +45,120 @@
                 //Da vuelta por cada fila encontrada
                 while ($row = $result->fetch_assoc()) 
                 {
-                    $field1name = $row["Nombre"];
-                    $field2name = $row["Usuario"];
-                    $field3name = $row["Salon"];
-					$field4name = $row["Horario"];
-                    $field5name = $row["ClaveMateria"];
-                    $field6name = $row["Materia"];
-                  
+                    $field1name = $row["Usuario"];
+                    $field2name = $row["Nombre"];
+                    $field3name = $row["Carrera"];
                 }
                 
                     // Agregar variables al html
             echo '
             <div class="row paddTop5">
                 
-                    
+                        
                         <div class="container">
-                            <div class="col-12">
+                        <br><br>
+                            <div class="col-11">
                                 <h5>
-                                    Personal
+                                    Aspirante
                                 </h5>
-                            <hr class="col">        
+                                <hr>
                             </div>
                             <div class="container">
                                 <div class="row filas align-items-center">
-                                    <div class="col-6">
-									
+                                    <div class="col">
                                         <div class="conteiner">
                                             <div class="row">
                                                 <b>Nombre</b>
+                                            </div>
+                                            <div class="row">
+                                                <p>'.$field2name.'</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="conteiner">
+                                            <div class="row">
+                                                <b>Usuario</b>
                                             </div>
                                             <div class="row">
                                                 <p>'.$field1name.'</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col">
                                         <div class="conteiner">
                                             <div class="row">
-                                                <b>Usuario</b>
+                                                <b>Carrera</b>
                                             </div>
                                             <div class="row">
-                                                <p>'.$field2name.'</p>
-                                            </div>
-                                        </div>
-                                    </div>                
+        ';
+
+                
+                //Se vacía la variable result
+                $result->free();
+                
+            } 
+
+//----------------- Aquí se llena el promedio ----------------------------------------------------------------------------------------------
+
+        // consulta del nombre (solo el nombre)
+        $query = " SELECT 
+        (cal_unidad1 + cal_unidad2 + cal_unidad3 + cal_unidad4 + cal_unidad5 + cal_unidad6)/(if(cal_unidad1<>0,1,0)+if(cal_unidad2<>0,1,0)
+        +if(cal_unidad3<>0,1,0)+if(cal_unidad4<>0,1,0)+if(cal_unidad5<>0,1,0)+if(cal_unidad6<>0,1,0)) prom_real
+        from calificacion where alu_cve_nocontrol2 = '18200759' ;";
+        // Guardar datos del registro en variables
+        // EL if es para ver que el query te devolvió registros
+        if ($result = $mysqli->query($query)) {
+            //Da vuelta por cada fila encontrada
+			$promedio=0;
+            while ($row = $result->fetch_assoc()) 
+            {
+                
+                $promedio = $promedio + $row["prom_real"];
+            
+            }
+
+            //Para sacar el promedio se divide el promedio entre 
+            //el numero de promedios que se obtrienen de la consulta
+
+            $row_cnt = $result->num_rows; //Numero de promedios
+
+            $general = $promedio / $row_cnt; //Promedio general
+
+            // Agregar variables al html
+            echo '
+                        <p>'.$field3name.'</p>                  
             ';
             
             //Se vacía la variable result
             $result->free();
         } 
 
-?>
+
+//----------------- Aquí se llena lo demás ----------------------------------------------------------------------------------------------
+// deven de colocar las variables que se declararon hasta casi por arriba
+//las de field1 y demás
+
+        echo '
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 									
-                                    <div class="row align-items-center paddTop5">
-                                        <div class="col-12">
-                                        <h5>
-                                            Materias
-                                        </h5>
-                                        <hr class="col">
-                                            <div class="container">
-
-
-
-<?php
-//----------------- Este es para llenar los datos de la materia ----------------------------------------------------------------------------------------------
-
-            // consulta datos del alumno
-            $query = "SELECT   m.mat_nombre as 'Materia', ad.cla_salon as 'Salon'
-						FROM clase ad
-						inner join materia as m on  m.mat_cve_materia = ad.mat_cve_materia2 where ad.per_cve_personal = 'PER-4';";
-
-            // Guardar datos del registro en variables
-            // EL if es para ver que el query te devolvió registros
-            if ($result = $mysqli->query($query)) {
-                //Da vuelta por cada fila encontrada
-                while ($row = $result->fetch_assoc()) 
-                {
-                    $Materia = $row["Materia"];
-                    $Salon = $row["Salon"];
-                    
-                    echo '
-
-                    <div class="row">
-                        <div class="col-6">
-                            <p>'.$Materia.'</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="centrarTexto">'.$Salon.'</p>
-                        </div>
                     </div>
-                    ';
-                }
-            }
-?>
-                                           
-                    </div>
-                </div>
+                ';
+
+        ?>
+
+
             </div>
-        </div>
-
-    </div>
+                    
 
 
-    
-</main>
-</div>
+            </div>
+
+            </div>
+    </main>

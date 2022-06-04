@@ -35,7 +35,7 @@ class GETTINGG
         
 
           if (($personal == '') || ($contra == '')|| ($tipo == '')  ) {
-              echo '0';
+             header('Location: ' . $_SERVER['HTTP_REFERER']);
           }
 
          else {
