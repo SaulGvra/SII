@@ -1,18 +1,18 @@
 <div class="principal container-fluid">
 
-<form action="modulos/insertar.php" method="post">
+<form action="modulos/insertaral.php" method="post">
 <div class="paddingt row ">
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Registro de Alumnos</h4>
         
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation">
           <div class="row g-3">
 
          
           
           <div class="col-sm-4">
               <label for="firstName" class="form-label">No. Contol</label>
-              <input type="text" class="form-control" name="nocontol" placeholder="" value="" required>
+              <input type="text" class="form-control" name="nocontrol" placeholder="" value="" required>
               <div class="invalid-feedback">
               Introduce número de control.
               </div>
@@ -30,7 +30,7 @@
             </div>
             </div>
 
-            <div class="row g-3">
+            <!-- <div class="row g-3">
             <h6 class="mb-3" id="titulos">Información Escolar</h6>
             
             
@@ -56,8 +56,8 @@
               Selecciona una un estatus.
               </div>
             </div>
-
-        </div>
+        </div> -->
+        <br>
         <div class="row g-3">
           <h6 class="mb-3" id="titulos">Carrera a elegir</h6>
 
