@@ -6,9 +6,12 @@
         <br>
         <div class="row">
 <?php
+
+    $control = $_SESSION['user'];
+
     include('conexion.php');
     // consulta datos del alumno
-    $query = "SELECT alumno.alu_cve_nocontrol, alumno.alu_nombre,alumno.alu_paterno,alumno.alu_materno ,alumno.alu_semestre, alumno.alu_especialidad FROM alumno where alumno.alu_cve_nocontrol='18200759';";
+    $query = "SELECT alumno.alu_cve_nocontrol, alumno.alu_nombre,alumno.alu_paterno,alumno.alu_materno ,alumno.alu_semestre, alumno.alu_especialidad FROM alumno where alumno.alu_cve_nocontrol='$control';";
     // Guardar datos del registro en variables
     // EL if es para ver que el query te devolvió registros
     if ($result = $mysqli->query($query)) {

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+    session_start();
+?>
 <html>
         <head>
             <!-- Required meta tags -->

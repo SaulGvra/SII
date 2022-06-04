@@ -10,7 +10,8 @@
                                             <center><h3><b>Consulta de Boletas</b></h3></center>
                                             <br>
 <?php
-$control = '18200759';
+$control = $_SESSION['user'];
+
 $semestre = '8';
 echo '
                                             <h5>No. Control '.$control.'</h5>
