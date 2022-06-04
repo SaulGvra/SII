@@ -10,8 +10,8 @@
                         <a href="modulos/inicio_asp.php"><i class="fa-solid fa-house-user"> </i> Inicio</a>
                         </li>
                         <li>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
-                            <ul class="collapse lisst-unstyled" id="pageSubmenu">
+                            <a href="#pageSubmenuad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
+                            <ul class="collapse lisst-unstyled" id="pageSubmenuad">
                                 <li>
                                     <a href="ins_alumno.php">Alumnos</a>
                                 </li>  
@@ -55,8 +55,8 @@
                                     </li>
                                     
                                     <li>
-                                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
-                                        <ul class="collapse lisst-unstyled" id="pageSubmenu">
+                                        <a href="#pageSubmenuad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa-solid fa-user-check"></i> Inscripciones</a>
+                                        <ul class="collapse lisst-unstyled" id="pageSubmenuad">
                                             <li>
                                                 <a href="ins_alumno.php">Alumnos</a>
                                             </li>  
