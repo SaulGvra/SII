@@ -31,6 +31,10 @@
                                 </li>   
                             </ul>
                         </li>
+
+                        <li>
+                            <a href="index_reporte.php"><i class="fa-solid fa-calendar-days"></i> Reporte</a>
+                        </li>
                         <br><br><br>
                         <hr style="width:100%;text-align:left;margin-left:0">
                         <li>
