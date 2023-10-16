@@ -17,7 +17,3 @@ El Sistema Integral de Información (SII) es una plataforma web diseñada para p
 - **CSS (Bootstrap):** Para el diseño y la presentación de la interfaz de usuario, incluyendo la utilización de Bootstrap para componentes y estilos.
 
 - **JavaScript:** Para la funcionalidad interactiva y dinámica de la plataforma.
-
-## Cómo utilizar
-
-1. **Clonar el repositorio:**
